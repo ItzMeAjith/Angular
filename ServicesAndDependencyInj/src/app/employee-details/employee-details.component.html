@@ -1,0 +1,39 @@
+<h1>Employee Details</h1>
+<table class="table w-50">
+  <thead class="bg-success">
+    <th>Employee ID</th>
+    <th>Employee Name</th>
+    <th>Employee Department</th>
+    <th>Employee Salary</th>
+</thead>
+<tbody>
+  <tr *ngFor="let i of employee">
+    <td> {{ i.EmpID }}</td>
+    <td>{{ i.EmpName }}</td>
+    <td>{{ i.EmpDepartment }}</td>
+    <td>{{ i.EmpSalary }}</td>
+  </tr>
+</tbody>
+</table>
+
+<h1>Getting By ID</h1>
+Enter the Employee ID to search: <input type="text" [(ngModel)]="ids"><button class="btn-success" >Get</button> <br><br>
+<table class="table w-50">
+  <thead class="bg-success">
+    <th>Employee ID</th>
+    <th>Employee Name</th>
+    <th>Employee Department</th>
+    <th>Employee Salary</th>
+</thead>
+<tbody>
+  <tr>
+    <td> {{ emp.EmpID }}</td>
+    <td>{{ emp.EmpName }}</td>
+    <td>{{ emp.EmpDepartment }}</td>
+    <td>{{ emp.EmpSalary }}</td>
+  </tr>
+</tbody>
+</table>
+
+
+

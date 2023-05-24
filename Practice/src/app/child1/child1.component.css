@@ -1,0 +1,29 @@
+.heading {
+  color: green;
+
+  text-align: center;
+
+}
+
+.newheading {
+  text-transform: uppercase;
+}
+
+.clr {
+  color: black;
+
+}
+
+.bdr {
+  border-radius: 20px;
+  padding: 5px;
+
+}
+
+.y1 {
+  color: red;
+}
+
+.y2 {
+  text-align: center;
+}

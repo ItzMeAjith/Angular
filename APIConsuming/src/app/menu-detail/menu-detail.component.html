@@ -1,0 +1,22 @@
+
+
+<h1>Menu Items</h1>
+<input type="text" [(ngModel)]="id">
+<button (click)="getMenuID()" [ngStyle]="{cursor:'pointer'}">Get Menu</button> <br><br>
+<table class="table">
+  <thead class="bg-success">
+    <th>Item ID</th>
+    <th>Item Name</th>
+    <th>Item Price</th>
+    <th>Item Count</th>
+  </thead>
+  <tbody>
+    <tr *ngIf="Menu">
+      <td>{{ Menu.itemId }}</td>
+      <td>{{ Menu.itemName }}</td>
+      <td>{{ Menu.itemPrice }}</td>
+      <td>{{ Menu.itemCount}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>

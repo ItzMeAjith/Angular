@@ -1,0 +1,20 @@
+.product-image {
+  width: 100%;
+}
+
+.product-name {
+  margin-top: 20px;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-description {
+  margin-top: 20px;
+}
+
+.add-to-cart-button {
+  margin-top: 20px;
+}

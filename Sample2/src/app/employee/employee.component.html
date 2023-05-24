@@ -1,0 +1,46 @@
+<!-- <h1>Employee Table</h1>
+<ul *ngFor="let i of EmployeeArrays">
+  <li>{{ i.EmpID }} {{ i.EmpName }} {{ i.EmpDepartment }} {{ i.EmpSalary }}</li>
+</ul> -->
+
+<h1>Registration Form</h1>
+<table></table>
+<br />
+<button class="btn-success" (click)="onAdd()">Add new Employee</button
+><br /><br />
+
+<div *ngIf="EmployeeArrays.length > 0; then Data; else noData"></div>
+
+<!-- <div>
+  <p *ngIf="EmployeeArrays.length == 0">
+    There is no data to fetch!!!!!!!!!!!!!!!!
+  </p>
+</div> -->
+<ng-template #Data>
+  <table class="table w-50">
+    <thead class="bg-success">
+      <tr>
+        <th>EmpNID</th>
+        <th>EmpName</th>
+        <th>EmpDepartment</th>
+        <th>EmpSalary</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody class="bg-wheat">
+      <tr *ngFor="let j of EmployeeArrays; let i = index">
+        <td>{{ j.EmpID }}</td>
+        <td>{{ j.EmpName }}</td>
+        <td>{{ j.EmpDepartment }}</td>
+        <td>{{ j.EmpSalary }}</td>
+        <td>
+          <button class="btn-danger" (click)="onDelete(i)">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #noData>
+  <p>There is no data to fetch!!!!!!!!!!!!!!!!</p>
+</ng-template>

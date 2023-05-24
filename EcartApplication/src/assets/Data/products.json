@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Redmi Note 11",
+    "description": "This is the description of Product 1",
+    "price": 19.99,
+    "image": "assets/RedmiNote11.jfif"
+  },
+  {
+    "name": "Redmi Note 11",
+    "description": "This is the description of Product 1",
+    "price": 19.99,
+    "image": "assets/RedmiNote11.jfif"
+  },
+  {
+    "name": "Redmi Note 11",
+    "description": "This is the description of Product 1",
+    "price": 19.99,
+    "image": "assets/RedmiNote11.jfif"
+  },
+  {
+    "name": "Redmi Note 11",
+    "description": "This is the description of Product 1",
+    "price": 19.99,
+    "image": "assets/RedmiNote11.jfif"
+  }
+
+]

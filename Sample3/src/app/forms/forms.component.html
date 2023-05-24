@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <div class="form-area">
+    <form #frm="ngForm" (submit)="onSubmit(frm)">
+      <div class="form-group">
+        <label class="form-label">Name :</label>
+        <input
+          type="text"
+          name="nme"
+          class="form-control"
+          ngModel
+          #nme1="ngModel"
+          required
+          (change)="some(nme1)"
+          [ngClass]="{ 'is-invalid': nme1.invalid && nme1.touched }"
+        />
+        <!-- <div class="alert alert-danger" *ngIf="nme1.invalid && nme1.touched">
+          Please fill!!!
+        </div> -->
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Email :</label>
+        <input type="text" name="mail" class="form-control" ngModel />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Address :</label>
+        <input type="text" name="addr" class="form-control" ngModel />
+      </div>
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<h1>Product List</h1>
+
+<table class="table w-25 border-2">
+<thead class="bg-success active">
+  <th>S.No</th>
+  <th>Product ID</th>
+  <th>Product Name</th>
+</thead>
+<tr *ngFor="let pr of PDetails;let i=index">
+  <td>{{i+1}}</td>
+  <td>{{pr.ProductID}}</td>
+  <td>{{pr.ProductName}}</td>
+</tr>
+</table>

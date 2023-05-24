@@ -1,0 +1,56 @@
+<!-- <h1>Registration Form</h1>
+<table>
+  <tr>
+    <td><label for="">Enter Employee ID : </label></td>
+    <td><input type="text" [(ngModel)]="EmpID" /></td>
+  </tr>
+  <tr>
+    <td><label for="">Enter Employee Name : </label></td>
+    <td><input type="text" [(ngModel)]="EmpName" /></td>
+  </tr>
+  <tr>
+    <td><label for="">Enter Employee department : </label></td>
+    <td><input type="text" [(ngModel)]="EmpDepartment" /></td>
+  </tr>
+  <tr>
+    <td><label for="">Enter Employee Salary : </label></td>
+    <td><input type="text" [(ngModel)]="EmpSalary" /></td>
+  </tr>
+</table>
+<br />
+<button class="btn-success" (click)="onAdd()">Add new Employee</button
+><br /><br />
+
+<div *ngIf="EmployeeArrays.length > 0; then Data; else noData"></div>
+<ng-template #Data>
+  <table class="table w-50">
+    <thead class="bg-success">
+      <tr>
+        <th>EmpNID</th>
+        <th>EmpName</th>
+        <th>EmpDepartment</th>
+        <th>EmpSalary</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody class="bg-wheat">
+      <tr *ngFor="let j of EmployeeArrays; let i = index">
+        <td>{{ j.EmpID }}</td>
+        <td>{{ j.EmpName | uppercase }}</td>
+        <td>{{ j.EmpDepartment }}</td>
+        <td>{{ j.EmpSalary | currency : "INR" }}</td>
+        <td>
+          <button class="btn-danger" (click)="onDelete(i)">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #noData>
+  <p>There is no data to fetch!!!!!!!!!!!!!!!!</p>
+</ng-template> -->
+
+<!-- Pipes -->
+<!-- <h1>{{ pipe | chumma : 11 }}</h1> -->
+{{ name123 }}

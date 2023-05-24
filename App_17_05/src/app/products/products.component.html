@@ -1,0 +1,18 @@
+<h1 [class.heading]="true">Product Component</h1>
+<label>Select the product ID to display </label>
+<select [(ngModel)]="ans">
+  <option *ngFor="let i of products; let in = index" (blur)="getIndex(in)">
+    {{ i.productID }}
+  </option>
+</select>
+<br />
+
+<div [ngSwitch]="ans">
+  <div *ngSwitchCase="111">You selected TV</div>
+  <div *ngSwitchCase="112">You selected Laptop</div>
+  <div *ngSwitchCase="113">You selected Pendrive</div>
+  <div *ngSwitchCase="114">You selected Iphone</div>
+  <div *ngSwitchDefault>Select the ID</div>
+</div>
+{{ parentData }}
+<button (click)="Pass()">Pass Event</button>

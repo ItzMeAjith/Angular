@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<h1>Details Page</h1>
+ <table class="table ">
+  <thead class="bg-success h5 h-50">
+    <th>ID</th>
+    <th>Product Name</th>
+    <th>Description</th>
+    <th>Product Price</th>
+    <th>Product Image</th>
+    <th>Action</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pro of product;let i=index">
+      <td>{{i+1}}</td>
+      <td>{{pro.name}}</td>
+      <td>{{pro.description}}</td>
+      <td>{{pro.price}}</td>
+      <td>{{pro.image}}</td>
+      <td><button class="btn bg-danger text-white" (click)="onDelete(i)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+

@@ -1,0 +1,40 @@
+<h1>Product Details</h1>
+
+<table class="table w-50 border-2">
+<thead class="bg-success active">
+  <th>S.No</th>
+  <th>Product ID</th>
+  <th>Product Name</th>
+  <th>Product Category</th>
+  <th>Product Price</th>
+</thead>
+<tr *ngFor="let pr of PDetails;let i=index">
+  <td>{{i+1}}</td>
+  <td>{{pr.ProductID}}</td>
+  <td>{{pr.ProductName}}</td>
+  <td>{{pr.ProductCategory}}</td>
+  <td>{{pr.ProductPrice|productname:10}}</td>
+</tr>
+</table>
+
+<h2>Filter</h2>
+Select category to filter : <select [(ngModel)]="selectedValue">
+  <option *ngFor="let i of PDetails">{{i.ProductCategory}}</option>
+ </select> <button class="" (click)="   filterProductsByCategory()">Go</button>{{selectedValue}}
+<table class="table w-50 border-2">
+  <thead class="bg-success active">
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Product Category</th>
+    <th>Product Price</th>
+  </thead>
+  <tr >
+    <!-- <td>{{ProductbyCat.ProductID}}</td>
+    <td>{{ProductbyCat.ProductName}}</td>
+    <td>{{ProductbyCat.ProductCategory}}</td>
+    <td>{{ProductbyCat.ProductPrice}}</td> -->
+  </tr>
+  </table>
+  <h3>hii</h3>
+
+{{filteredProducts|json}}

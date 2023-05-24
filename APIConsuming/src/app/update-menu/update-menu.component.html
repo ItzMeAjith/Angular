@@ -1,0 +1,12 @@
+<h1>Update Menu</h1>
+<label>Select Item ID to update : </label>
+<select [(ngModel)]="id" [(ngModel)]="Menu.itemId" (change)="onChange()">
+  <option *ngFor="let i of hotel">{{i.itemId}}</option>
+</select><br><br>
+<label >Enter New Item Name :</label>
+<input type="text" [(ngModel)]="Menu.itemName"> <br><br>
+<label >Enter New Item Price :</label>
+<input type="text" [(ngModel)]="Menu.itemPrice"><br><br>
+<label >Enter New Item Count :</label>
+<input type="text" [(ngModel)]="Menu.itemCount"><br><br>{{id}}
+<button (click)=" getMenuID()">Update Menu</button>

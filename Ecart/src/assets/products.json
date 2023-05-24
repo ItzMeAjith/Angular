@@ -1,0 +1,8 @@
+[
+  {"ProductID": 111,"ProductName": "Iphone","ProductCategory":"Electronics","ProductPrice":100000},
+  {"ProductID": 112,"ProductName": "Android","ProductCategory":"Electronics","ProductPrice":60000},
+  {"ProductID": 113,"ProductName": "Washing Machine","ProductCategory":"Home-Appliances","ProductPrice":50000},
+  {"ProductID": 114,"ProductName": "Flower vase","ProductCategory":"Home-Appliances","ProductPrice":6000},
+  {"ProductID": 115,"ProductName": "Fridge","ProductCategory":"Home-Appliances","ProductPrice":70000},
+  {"ProductID": 116,"ProductName": "T-Shirt","ProductCategory":"Textile","ProductPrice":600}
+]

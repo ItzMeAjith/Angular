@@ -1,0 +1,19 @@
+<!-- <app-navbar></app-navbar> -->
+<app-add-product></app-add-product>
+
+<h1>This is product</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-3" *ngFor="let product of products">
+      <div class="card">
+        <img src="{{ product.image }}" height="350px" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text">Price: {{ product.price }}</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

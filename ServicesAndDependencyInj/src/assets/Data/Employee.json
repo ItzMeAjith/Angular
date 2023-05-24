@@ -1,0 +1,7 @@
+ [
+    { "EmpID": 112, "EmpName": "Hari", "EmpDepartment": "Development", "EmpSalary": 10000 },
+    { "EmpID": 112, "EmpName": "Hari", "EmpDepartment": "Development", "EmpSalary": 10000 },
+    { "EmpID": 111, "EmpName": "Ajth", "EmpDepartment": "Development", "EmpSalary": 10000 },
+    { "EmpID": 113, "EmpName": "Ajth", "EmpDepartment": "Development", "EmpSalary": 10000 },
+    { "EmpID": 114, "EmpName": "Hari", "EmpDepartment": "Development", "EmpSalary": 10000 }
+ ]

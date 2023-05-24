@@ -1,0 +1,18 @@
+<h1>Menu Items</h1>
+<table class="table">
+  <thead class="bg-success">
+    <th>Item ID</th>
+    <th>Item Name</th>
+    <th>Item Price</th>
+    <th>Item Count</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let std of hotel">
+      <td>{{ std.itemId }}</td>
+      <td>{{ std.itemName }}</td>
+      <td>{{ std.itemPrice }}</td>
+      <td>{{ std.itemCount}}</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="getAll()" [ngStyle]="{cursor:'pointer'}">Get Menus</button> <br>

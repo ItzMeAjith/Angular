@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div id="additem"><app-addproduct></app-addproduct></div>
+<h1>Products List</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-3" *ngFor="let product of products">
+      <div class="card">
+        <img src="{{ product.image }}" height="250px" class="card-img-top" alt="Card Image">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text">Price: {{ product.price|currency:"INR" }}</p>
+          <button class="btn btn-primary" (click)="buyNow(product)">Buy now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,85 @@
+<div class="form">
+  <h1
+    [ngClass]="{
+      heading: true,
+      newheading: true,
+    }"
+  >
+    Registration Form
+  </h1>
+  <table
+    [ngStyle]="{
+      'font-weight': 'bold',
+      'margin-left': 'auto',
+      'margin-right': 'auto'
+    }"
+  >
+    <tr>
+      <td><label for="">Enter Rollno </label></td>
+      <td>: <input type="text" [(ngModel)]="Rollno" /></td>
+    </tr>
+    <tr>
+      <td><label for="">Enter name </label></td>
+      <td>: <input type="text" [(ngModel)]="name" /></td>
+    </tr>
+    <tr>
+      <td><label for="">Enter department </label></td>
+      <td>: <input type="text" [(ngModel)]="Dept" /></td>
+    </tr>
+    <tr>
+      <td><label for="">Enter grade </label></td>
+      <td>: <input type="text" [(ngModel)]="Grade" /></td>
+    </tr>
+    <tr>
+      <td><label for="">Enter photograph path </label></td>
+      <td>: <input type="text" name="" [(ngModel)]="photo" /></td>
+    </tr>
+  </table>
+
+  <br /><br />
+  <button
+    (click)="addStudent()"
+    class="btn-success"
+    [ngStyle]="{
+      'margin-left': '45%',
+      cursor: 'pointer'
+    }"
+    [class]="{
+      clr: false,
+      bdr: true
+    }"
+  >
+    Add student
+  </button>
+  <br /><br />
+  <table class="table w-50" [ngStyle]="addStyle()" [style]="{ color: 'black' }">
+    <thead>
+      <th>Rollno</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Grade</th>
+      <th>Photograph</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let std of Student; let i = index">
+        <td>{{ std.Rollno }}</td>
+        <td>{{ std.name }}</td>
+        <td>{{ std.Dept }}</td>
+        <td>{{ std.Grade }}</td>
+        <td><img [src]="std.photo" alt="Photo" height="50px" /></td>
+        <td>
+          <button
+            class="btn-danger"
+            (click)="onDelete(i)"
+            [style]="{
+              color: ''
+            }"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

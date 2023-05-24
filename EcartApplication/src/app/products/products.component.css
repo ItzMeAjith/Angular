@@ -1,0 +1,15 @@
+.card {
+  width: 250px;
+  margin: 20px;
+  height: 480px;
+  padding: 10px;
+  background-color: aliceblue;
+  box-shadow: 10px 10px 10px black;
+}
+h1{
+  text-align: center;
+}
+#additem{
+  position: absolute;
+left: 90%;
+}

@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    color:blue;
+}
+div{
+    border:  2px solid green;
+    padding: 10px;
+}
+img{
+    border-radius: 10px;
+    margin-left: 32%;
+}
