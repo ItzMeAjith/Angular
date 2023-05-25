@@ -2,6 +2,6 @@
 <label>Select Item ID to delete : </label>
 <select [(ngModel)]="id">
   <option *ngFor="let i of hotel">{{i.itemId}}</option>
-</select>{{id}}
+</select>
 <button (click)="getMenuID()" [ngStyle]="{cursor:'pointer'}">Delete menu</button> <br>
 

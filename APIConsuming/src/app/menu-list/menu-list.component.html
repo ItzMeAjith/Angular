@@ -5,6 +5,7 @@
     <th>Item Name</th>
     <th>Item Price</th>
     <th>Item Count</th>
+    <th>Action</th>
   </thead>
   <tbody>
     <tr *ngFor="let std of hotel">
@@ -12,6 +13,7 @@
       <td>{{ std.itemName }}</td>
       <td>{{ std.itemPrice }}</td>
       <td>{{ std.itemCount}}</td>
+      <td><button routerLink='/update' class="bg-info text-white" >Update</button><button routerLink="'/delete" class="bg-danger text-white">Delete</button></td>
     </tr>
   </tbody>
 </table>
